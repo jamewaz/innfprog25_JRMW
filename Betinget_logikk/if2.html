@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If-test James</title>
+    <title>if-test</title>
 </head>
 <body>
-    <p id="utskrift"> </p>
+    <p id="utskrift"></p>
     <script>
-        const navn = "James";
+        const alder = 24;
         let utskrift;
 
-        if(navn === "James") {
-            utskrift = `Mitt navn er ${navn} Walker`;
+        if (alder < 18) {
+            utskrift = "Du er ikke myndig";
+        } else if (alder >=18 && alder <= 62) {
+            utskrift = "Du er myndig og klar for studier eller arbeidslivet";
         } else {
-            utskrift = `Jeg heter ikke ${navn} Walker`;
+            utskrift = "Du er pensjonsklar!";
         }
 
         document.getElementById("utskrift").textContent = utskrift;

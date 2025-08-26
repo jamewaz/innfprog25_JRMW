@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="utskrift"></p>
+    <script>
+
+        const ITF19019_grade = "A";
+        const ITF10511_grade = "F";
+
+        const ITF19019_passed = ITF19019_grade === "F" ? true : false;
+        const ITF10511_passed = ITF10511_grade === "F" ? true : false;
+    
+        let countPassed = 0;
+
+        if (ITF19019_passed) {
+            countPassed++;
+        }
+        if (ITF10511_passed) {
+            countPassed++;
+        }
+
+        const printText = `Du har bestått ${countPassed} av 2 kurs`;
+        document.getElementById("utskrift").textContent = printText;
+
+    </script>
+</body>
+</html>
