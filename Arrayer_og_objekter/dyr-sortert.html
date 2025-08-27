@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyr Sortert</title>
+</head>
+<body>
+    <p id="utskrift"></p>
+    <p id="antallDyr"></p>
+    <script>
+         const dyr = ["hund", "katt", "hest", "fugl", "fisk", "gris", "ku", "sau", "geit", "kanin"];
+
+         dyr.push("hund", "ku");
+
+         dyr.sort()
+
+         const antallDyr = dyr.length
+    
+        const tekst = `Her er det listet opp noen dyr, for eksempel ${dyr[3]} og ${dyr[7]}.`;
+
+        document.getElementById("utskrift").textContent = tekst;
+
+        document.getElementById("antallDyr").textContent = `Antall dyr: ${antallDyr}. ${dyr.join(",")}`
+    </script>
+</body>
+</html>
