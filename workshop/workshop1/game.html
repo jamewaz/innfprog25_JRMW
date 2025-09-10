@@ -75,9 +75,24 @@
     </main>
     <script>
         //PREPARE GAME CONFIG AND VARIABLES
-        //TODO: config
+        //TODO: player info
+        const gameConfig = {
+            player: "James",
+            energy: 5,
+            points: 10,
+            duration: 138
+        };
+
+        document.getElementById("playerName").innerHTML = gameConfig.player;
+        document.getElementById("energy").innerHTML = gameConfig.energy;
+        document.getElementById("points").innerHTML = gameConfig.points;
+        document.getElementById("duration").innerHTML = gameConfig.duration
        
         //TODO: notebook
+        const notebook = {
+            
+        }
+
         
 
         //TODO: print playerinfo to HTML
